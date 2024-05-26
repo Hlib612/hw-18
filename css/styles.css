@@ -1,64 +1,128 @@
-li{
-    outline: 1px solid black;
-    width: 200px;
-    height: 150px;
-  }
-  li:nth-of-type(2) {
-    background-color: palevioletred;
-  }
-  li:nth-of-type(3) {
-    background-color: teal;
-  }
-  li:nth-of-type(4) {
-    background-color: orange;
-  }
-  .nav{
-    display: flex;
-    width: 800px;
-  }
-  img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  ul{
-    list-style: none;
-  }
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 1000px;
-  }
-  .box{
-flex-basis: 50%;
-height: 150px;
-background-color: chartreuse;
-border-radius: 4px;
-  }
-  .box:nth-child(1){
-    background-color: blueviolet;
-    background-image: url("../images/bird.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .box:nth-child(2){
-    background-color: rgb(7, 166, 70);
-    background-image: url("../images/cat.webp");
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-size: 20%;
-  }
-  .box:nth-child(3){
-    background-color: rgb(20, 169, 218);
-    background-image: url("../images/dog.png");
-    background-repeat: repeat-y;
-    background-position: left;
-    background-size: 10% 30%;
-  }
-  .box:nth-child(4){
-    background-color: rgb(33, 93, 222);
-    background-image: url("../images/turtle.webp");
-    background-repeat: repeat;
-    background-position: center;
-    background-size: 10%;
-  }
+li {
+  outline: 1px solid black;
+  width: 200px;
+  height: 150px;
+}
+li:nth-of-type(2) {
+  background-color: palevioletred;
+}
+li:nth-of-type(3) {
+  background-color: teal;
+}
+li:nth-of-type(4) {
+  background-color: orange;
+}
+.nav {
+  display: flex;
+  width: 800px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+ul {
+  list-style: none;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+.box {
+  flex-basis: 50%;
+  height: 150px;
+  background-color: chartreuse;
+  border-radius: 4px;
+}
+.box:nth-child(1) {
+  background-color: blueviolet;
+  background-image: url("../images/bird.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box:nth-child(2) {
+  background-color: rgb(7, 166, 70);
+  background-image: url("../images/cat.webp");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 20%;
+}
+.box:nth-child(3) {
+  background-color: rgb(20, 169, 218);
+  background-image: url("../images/dog.png");
+  background-repeat: repeat-y;
+  background-position: left;
+  background-size: 10% 30%;
+}
+.box:nth-child(4) {
+  background-color: rgb(33, 93, 222);
+  background-image: url("../images/turtle.webp");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 10%;
+}
+.overlay {
+  width: 1600px;
+  height: 500px;
+  background-color: #48ff00;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.2),
+      rgba(0, 255, 0, 0.2)
+    ),
+    url("../images/fish.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.button-test {
+  display: flex;
+  align-items: center;
+  padding: 24px 40px;
+  margin-top: 30px;
+  background-color: #48ff00;
+  color: beige;
+  font-size: 28px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-family: "Dancing Script";
+}
+.button-test::before {
+  display: inline-block;
+  margin-right: 9px;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: rgb(228, 52, 3);
+  background-image: url(../images/space_rocket.png);
+  background-size: contain;
+}
+.button-test:hover {
+  background-color: crimson;
+}
+.button-test:hover::before {
+  background-color: rgb(106, 255, 0);
+  background-image: url(../images/bus.webp);
+}
+.list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+.list-item {
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.list-item::before {
+  content: "11";
+  display: block;
+  background-color: aqua;
+  background-image: url(https://3627081962-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FTOxx7nSUyW1jh74KR9zH%2Fuploads%2FkKMQJYo3tV1MZU4cUuNo%2F8.png?alt=media);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
